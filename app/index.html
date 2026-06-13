@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTPC Korba | Defect Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-wrapper">
+
+        <!-- Header -->
+        <div class="login-top-header">
+            
+            <h1>NTPC Korba</h1>
+            <p>DEFECT PREDICTION SYSTEM</p>
+        </div>
+
+        <!-- Two Panel Login -->
+        <div class="login-panels">
+
+            <!-- Admin Panel -->
+            <div class="login-panel admin-panel">
+                <div class="panel-header">
+                    <span class="panel-icon">👤</span>
+                    <h2>Admin Login</h2>
+                    <p>Full access with record management</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Company Email</label>
+                    <input type="email" id="admin-email"
+                           placeholder="admin@ntpckorbaint.com"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="admin-password"
+                           placeholder="Enter password"/>
+                </div>
+
+                <button class="login-btn admin-btn" onclick="loginAdmin()">
+                    Login as Admin
+                </button>
+
+                <p class="error-msg" id="admin-error"></p>
+            </div>
+
+            <!-- Divider -->
+            <div class="panel-divider">
+                <div class="divider-line"></div>
+                <span>OR</span>
+                <div class="divider-line"></div>
+            </div>
+
+            <!-- Viewer Panel -->
+            <div class="login-panel viewer-panel">
+                <div class="panel-header">
+                    <span class="panel-icon">👁</span>
+                    <h2>Viewer Login</h2>
+                    <p>Query and prediction access only</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Company Email</label>
+                    <input type="email" id="viewer-email"
+                           placeholder="viewer@ntpckorbaint.com"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="viewer-password"
+                           placeholder="Enter password"/>
+                </div>
+
+                <button class="login-btn viewer-btn" onclick="loginViewer()">
+                    Login as Viewer
+                </button>
+
+                <p class="error-msg" id="viewer-error"></p>
+            </div>
+
+        </div>
+
+        <p class="footer-text">
+            © 2024 NTPC Korba Power Station. All rights reserved.
+        </p>
+
+    </div>
+
+    <script src="auth.js"></script>
+
+</body>
+</html>

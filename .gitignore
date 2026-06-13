@@ -1,0 +1,37 @@
+# ── Confidential Data ──
+data/korba_defects.xls
+data/korba_defects.xlsx
+data/clean_ntpc_data.xls
+data/clean_ntpc_data.csv
+
+# ── Database ──
+database/ntpc_records.db
+
+# ── Model Files ──
+model/model.pkl
+model/label_encoders.pkl
+model/avg_days.pkl
+model/feature_columns.pkl
+
+# ── Log Files ──
+scripts/retrain_log.txt
+scripts/sync_log.txt
+
+# ── Python Cache ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Virtual Environment ──
+venv/
+env/
+.venv/
+
+# ── OS Files ──
+.DS_Store
+Thumbs.db
+
+# ── IDE Files ──
+.vscode/
+.idea/

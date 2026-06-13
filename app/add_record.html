@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTPC Korba | Add Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-page">
+
+    <!-- Top Navigation -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-logo">⚡</div>
+            <div>
+                <div class="navbar-title">NTPC Korba</div>
+                <div class="navbar-subtitle">Add Defect Record</div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <span class="user-badge" id="user-email">Loading...</span>
+            <span class="role-badge" id="user-role"></span>
+            <button class="logout-btn" onclick="goBack()">← Back to Chat</button>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- Add Record Form -->
+    <div class="record-container">
+
+        <div class="record-header">
+            <h2>Add New Defect Record</h2>
+            <p>All fields are mandatory — incomplete records affect model accuracy</p>
+        </div>
+
+        <div class="record-form">
+
+            <!-- Row 1 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Equipment Name <span class="required">*</span></label>
+                    <input type="text" id="equipment"
+                           placeholder="e.g. COOLING TOWER 7B CELL / FAN 05"/>
+                    <small>Type exact equipment name as in records</small>
+                </div>
+                <div class="form-group">
+                    <label>Notification Date <span class="required">*</span></label>
+                    <input type="date" id="notif_date"/>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Notification Time <span class="required">*</span></label>
+                    <input type="time" id="notif_time"/>
+                </div>
+                <div class="form-group">
+                    <label>Priority <span class="required">*</span></label>
+                    <select id="priority">
+                        <option value="">-- Select Priority --</option>
+                        <option value="Priority A">Priority A (Highest)</option>
+                        <option value="Priority B">Priority B</option>
+                        <option value="Priority C">Priority C</option>
+                        <option value="Priority E- Emergent">Priority E (Emergent)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Notification Type <span class="required">*</span></label>
+                    <select id="notif_type">
+                        <option value="">-- Select Type --</option>
+                        <option value="M1">M1</option>
+                        <option value="M2">M2</option>
+                        <option value="M3">M3</option>
+                        <option value="M4">M4</option>
+                        <option value="OS">OS</option>
+                        <option value="SA">SA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Functional Location <span class="required">*</span></label>
+                    <input type="text" id="functional_loc"
+                           placeholder="e.g. 1017-S3COM-CLT-T7B-F05"/>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Completion Date <span class="required">*</span></label>
+                    <input type="date" id="completion_date"/>
+                </div>
+                <div class="form-group">
+                    <label>Completion Time <span class="required">*</span></label>
+                    <input type="time" id="completion_time"/>
+                </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label>Description <span class="required">*</span></label>
+                    <textarea id="description" rows="3"
+                              placeholder="Brief description of the defect..."></textarea>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <p class="error-msg"  id="error-msg"></p>
+            <p class="success-msg" id="success-msg"></p>
+
+            <!-- Buttons -->
+            <div class="form-actions">
+                <button class="reset-btn"  onclick="resetForm()">Reset</button>
+                <button class="submit-btn" onclick="submitRecord()">Submit Record</button>
+            </div>
+
+        </div>
+        <!-- Bulk Excel Upload Section -->
+<div class="record-form">
+    <div class="record-header">
+        <h2>📂 Bulk Upload via Excel</h2>
+        <p>Upload SAP Excel file — system will validate columns automatically</p>
+    </div>
+<!-- Recent Uploads Section -->
+<div class="training-status">
+    <h3>📁 Recent Excel Uploads</h3>
+    <p style="color:#6B7280; font-size:12px; margin-bottom:12px;">
+        Uploads can be deleted within 24 hours. 
+        After 24 hours records are permanently saved.
+    </p>
+    <div id="recent-uploads-list">
+        <p style="color:#6B7280; font-size:13px;">Loading...</p>
+    </div>
+</div>
+
+    <!-- Upload Area -->
+    <div class="upload-area" id="upload-area" 
+         onclick="document.getElementById('excel-file').click()"
+         ondragover="handleDragOver(event)"
+         ondrop="handleDrop(event)">
+        <div class="upload-icon">📊</div>
+        <p class="upload-text">Click to upload or drag and drop Excel file here</p>
+        <p class="upload-hint">.xlsx or .xls files only</p>
+        <input type="file" id="excel-file" 
+               accept=".xlsx,.xls" 
+               style="display:none"
+               onchange="handleFileSelect(event)"/>
+    </div>
+
+    <!-- File Info -->
+    <div id="file-info" style="display:none">
+        <div class="file-info-box">
+            <span id="file-name">No file selected</span>
+            <button onclick="clearFile()" class="clear-file-btn">✕ Remove</button>
+        </div>
+    </div>
+
+    <!-- Validation Results -->
+    <div id="validation-result" style="display:none">
+
+        <!-- Missing Columns -->
+        <div id="missing-cols-box" style="display:none" class="validation-box error-box">
+            <h4>❌ Missing Required Columns</h4>
+            <div id="missing-cols-list"></div>
+            <p class="validation-hint">
+                Please ensure your Excel file has all required columns before uploading.
+            </p>
+        </div>
+
+        <!-- Success -->
+        <div id="success-box" style="display:none" class="validation-box success-box">
+            <h4>✅ File Validated Successfully</h4>
+            <div id="file-stats"></div>
+        </div>
+
+    </div>
+
+    <!-- Required Columns Reference -->
+    <div class="required-cols-info">
+        <h4>Required Columns in Excel:</h4>
+        <div class="cols-grid">
+            <span class="col-tag">Notif.date</span>
+            <span class="col-tag">equipment</span>
+            <span class="col-tag">Notif. Time</span>
+            <span class="col-tag">Completion time</span>
+            <span class="col-tag">Completn date</span>
+            <span class="col-tag">Priority</span>
+            <span class="col-tag">Notifictn type</span>
+            <span class="col-tag">Functional Loc.</span>
+        </div>
+    </div>
+
+    <!-- Error and Success Messages -->
+    <p class="error-msg"  id="upload-error"></p>
+    <p class="success-msg" id="upload-success"></p>
+
+    <!-- Upload Report -->
+<div id="upload-report" style="display:none">
+
+    <!-- Summary Stats -->
+    <div class="report-summary">
+        <div class="report-stat total">
+            <span class="report-num" id="stat-total">0</span>
+            <span class="report-label">Total Rows</span>
+        </div>
+        <div class="report-stat success">
+            <span class="report-num" id="stat-added">0</span>
+            <span class="report-label">Added</span>
+        </div>
+        <div class="report-stat warning">
+            <span class="report-num" id="stat-filled">0</span>
+            <span class="report-label">Auto-filled</span>
+        </div>
+        <div class="report-stat error">
+            <span class="report-num" id="stat-skipped">0</span>
+            <span class="report-label">Skipped</span>
+        </div>
+    </div>
+
+    <!-- Autofill Details -->
+    <div id="autofill-details" style="display:none" class="report-section warning-section">
+        <h4>⚠️ Auto-filled Values</h4>
+        <div id="autofill-list"></div>
+    </div>
+
+    <!-- Skipped Rows Details -->
+    <div id="skipped-details" style="display:none" class="report-section error-section">
+        <h4>❌ Skipped Rows</h4>
+        <div id="skipped-list"></div>
+        <p class="report-hint">
+            These rows had missing critical values and were not added.
+            Please fix and re-upload if needed.
+        </p>
+    </div>
+
+    <!-- Retrain Status -->
+    <div class="report-section retrain-section">
+        <h4>🔄 Model Retraining</h4>
+        <p id="retrain-status-text">Not triggered</p>
+    </div>
+
+</div>
+    <!-- Upload Button -->
+    <div class="form-actions">
+        <button class="reset-btn" onclick="clearFile()">Clear</button>
+        <button class="submit-btn" id="upload-btn" 
+                onclick="uploadExcel()" disabled>
+            Upload and Process
+        </button>
+    </div>
+</div>
+
+        <!-- Model Training Status -->
+        <div class="training-status">
+            <h3>⚙️ Model Training Status</h3>
+            <div class="status-grid">
+                <div class="status-item">
+                    <span class="status-label">Last Trained</span>
+                    <span class="status-value" id="last-trained">Loading...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Records Used</span>
+                    <span class="status-value" id="records-used">Loading...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">New Records</span>
+                    <span class="status-value" id="new-records">Loading...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Retrain At</span>
+                    <span class="status-value">50 new records</span>
+                </div>
+            </div>
+            <button class="retrain-btn" id="retrain-btn" onclick="triggerRetrain()">
+                🔄 Retrain Model Now
+            </button>
+        </div>
+        <!-- Recent Records -->
+<div class="training-status">
+    <h3>📋 Recently Added Records</h3>
+    <div id="recent-records-list">
+        <p style="color:#6B7280; font-size:13px;">Loading...</p>
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div id="edit-modal" style="display:none; position:fixed; top:0; left:0; 
+     width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+    <div style="background:white; border-radius:16px; padding:28px; 
+                max-width:500px; margin:80px auto; position:relative;">
+        <h3 style="color:#023E8A; margin-bottom:16px;">Edit Record</h3>
+
+        <div class="form-group">
+            <label>Equipment Name</label>
+            <input type="text" id="edit-equipment"/>
+        </div>
+        <div class="form-group">
+            <label>Priority</label>
+            <select id="edit-priority">
+                <option value="Priority A">Priority A</option>
+                <option value="Priority B">Priority B</option>
+                <option value="Priority C">Priority C</option>
+                <option value="Priority E- Emergent">Priority E</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea id="edit-description" rows="3"></textarea>
+        </div>
+
+        <p class="error-msg" id="edit-error"></p>
+
+        <div class="form-actions">
+            <button class="reset-btn" onclick="closeEdit()">Cancel</button>
+            <button class="submit-btn" onclick="saveEdit()">Save Changes</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <script src="add_record.js"></script>
+
+</body>
+</html>

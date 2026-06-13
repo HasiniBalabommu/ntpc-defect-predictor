@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTPC Korba | Defect Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-page">
+
+    <!-- Top Navigation -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-logo">⚡</div>
+            <div>
+                <div class="navbar-title">NTPC Korba</div>
+                <div class="navbar-subtitle">Defect Prediction System</div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <span class="user-badge" id="user-email">Loading...</span>
+            <span class="role-badge" id="user-role"></span>
+
+            <!-- Notification Bell -->
+            <div class="notif-bell" onclick="toggleNotifications()">
+                🔔
+                <span class="notif-count" id="notif-count">0</span>
+            </div>
+
+            <button class="logout-btn" id="add-record-btn"
+                    onclick="window.location.href='http://127.0.0.1:5000/add-record-page'"
+                    style="display:none">
+                + Add Record
+            </button>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-avatar bot-avatar">⚡</div>
+                    <div class="message-bubble bot-bubble">
+                        Welcome to NTPC Korba Defect Prediction System!
+                        I can help you predict equipment failures and check defect history.
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <textarea
+                    class="chat-input"
+                    id="chat-input"
+                    placeholder="Ask about equipment defects..."
+                    rows="1"
+                    onkeypress="handleKeyPress(event)"
+                ></textarea>
+                <button class="send-btn" id="send-btn" onclick="sendMessage()">
+                    Send ➤
+                </button>
+            </div>
+        </div>
+
+        <!-- Notifications Panel -->
+        <div class="notif-panel" id="notif-panel">
+            <div class="notif-panel-header">
+                <h3>🔔 Notifications</h3>
+                <button onclick="toggleNotifications()">✕</button>
+            </div>
+
+            <div class="notif-tabs">
+                <button class="notif-tab active" onclick="switchTab('high')">
+                    🔴 HIGH Risk
+                </button>
+                <button class="notif-tab" onclick="switchTab('medium')">
+                    🟡 MEDIUM Risk
+                </button>
+            </div>
+
+            <div id="notif-high" class="notif-list"></div>
+            <div id="notif-medium" class="notif-list" style="display:none"></div>
+        </div>
+
+    </div>
+
+    <!-- Admin Popup -->
+    <div id="admin-popup" style="display:none">
+        <div class="popup-overlay" onclick="closePopup()"></div>
+        <div class="popup-box">
+            <div class="popup-header">
+                <h3>⚠️ Defect Alerts — <span id="popup-month"></span></h3>
+                <button onclick="closePopup()">✕</button>
+            </div>
+            <div class="popup-content" id="popup-content">
+                Loading...
+            </div>
+            <button class="popup-close-btn" onclick="closePopup()">
+                Got it, thanks!
+            </button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+
+</body>
+</html>

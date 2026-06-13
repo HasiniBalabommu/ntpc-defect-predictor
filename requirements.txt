@@ -1,0 +1,11 @@
+flask
+flask-cors
+langchain
+ollama
+fuzzywuzzy
+python-Levenshtein
+pandas
+scikit-learn
+numpy
+openpyxl
+xlrd==2.0.1
