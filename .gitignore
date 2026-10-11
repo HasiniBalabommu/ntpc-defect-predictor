@@ -35,3 +35,7 @@ Thumbs.db
 # ── IDE Files ──
 .vscode/
 .idea/
+*.xlsx
+*.db
+*.pkl
+fixed_pipeline/out/

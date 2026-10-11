@@ -1,5 +1,0 @@
-[2026-09-09 14:40:30] Starting corrected retraining pipeline...
-[2026-09-09 14:40:30] History rows: 6826. New raw rows: 20.
-[2026-09-09 14:40:30] 388 records (the latest record per equipment) have no next-defect date yet and are correctly excluded from training, not fake-labeled.
-[2026-09-09 14:40:31] Retrained on 4806 rows, tested on 1202 rows. Test accuracy: 57.15%
-[2026-09-09 14:40:31] Retraining complete.
