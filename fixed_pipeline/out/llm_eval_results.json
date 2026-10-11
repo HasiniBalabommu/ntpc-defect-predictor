@@ -1,0 +1,522 @@
+[
+  {
+    "category": "equipment_risk",
+    "question": "When will ASH WTR TREAT CLEAN WATER SYSTEM break down?",
+    "intent": "maybe_single_equipment",
+    "context_given": "ML Model Prediction Result:\nEquipment    : ASH WTR TREAT CLEAN WATER SYSTEM\nRisk Level   : LOW\nDays to next : 30 days\nExpected date: 09 October 2026",
+    "response": "No Data: We do not have specific data available for the ASH WTR TREAT CLEAN WATER SYSTEM. \n\nRecommendation: For maintenance and troubleshooting purposes, please refer to the plant's maintenance schedule and technical documentation.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "What is the risk level for AWT CLEAN WATER PUMP NO.1?",
+    "intent": "maybe_single_equipment",
+    "context_given": "ML Model Prediction Result:\nEquipment    : AWT CLEAN WATER PUMP NO.1\nRisk Level   : LOW\nDays to next : 134 days\nExpected date: 21 January 2027",
+    "response": "No_data:\n\nI don't have equipment-specific data available for AWT CLEAN WATER PUMP NO.1, so I can only provide general maintenance best-practice advice.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "When is the next expected failure for CLARIFIED WATER SYSTEM PIPING?",
+    "intent": "maybe_single_equipment",
+    "context_given": "ML Model Prediction Result:\nEquipment    : CLARIFIED WATER SYSTEM PIPING\nRisk Level   : LOW\nDays to next : 30 days\nExpected date: 09 October 2026",
+    "response": "NO_DATA: \nPlease refer to the overall maintenance schedule and the Quality Management System (QMS) documentation for the next expected failure date of the CLARIFIED WATER SYSTEM PIPING.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "What is the risk level for COOLING TOWER 03 CELL / FAN 01?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: Due to insufficient information, it is not possible to determine the risk level for COOLING TOWER 03 CELL / FAN 01.\n\nNext question:",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "When will COOLING TOWER 03 CELL / FAN 02 fail next?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: Not enough specific data to identify equipment failures.\n\nMaintenance best-practice advice: For COOLING TOWER 03 Cell / Fan 02, please refer to the scheduled maintenance calendar or notify maintenance team for further assistance.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "What is the risk status of COOLING TOWER 03 CELL / FAN 05?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question. \nBased on the provided table, COOLING TOWER 03 CELL / FAN 05 is a Fan, so it has a MEDIUM risk level.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "How many days until COOLING TOWER 03 CELL / FAN 08 needs maintenance?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: \nI don't have specific data available for the COOLING TOWER 03 CELL / FAN 08, including the recommended maintenance days. \n\nRecommended action: I can suggest the COOLING TOWER 03 CELL / FAN 08 maintenance schedule in your records or provide general maintenance best-practice advice.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "What is the risk level for COOLING TOWER 03 CELL / FAN 12?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA\n\nNo specific equipment could be identified in this question.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "When will COOLING TOWER 01 CELL / FAN 01 break down?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: \nWe do not have specific equipment data available for COOLING TOWER 01 CELL / FAN 01.\n\nMaintenance Best-Practice Advice: \nFor future reference, when in doubt about equipment breakdowns, it's always best to consult the COOLING TOWER 01 Cell / FAN 01 Maintenance Log or Contact our Maintenance Team for assistance.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "equipment_risk",
+    "question": "What is the expected failure date for COOLING TOWER 01 CELL / FAN 02?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: \nYou don't have specific data available for this question. \n\nFollow-up question:\nCan you please provide the expected failure date for COOLING TOWER 01 Cell / Fan 02?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "notification_history",
+    "question": "Show me the recent defect history for ASH WTR TREAT CLEAN WATER SYSTEM.",
+    "intent": "history",
+    "context_given": "Notification History for ASH WTR TREAT CLEAN WATER SYSTEM (most recent 1 records, COMPLETE list):\n- 2023-01-21: resolved in 3 days",
+    "response": "**Notification History for ASH WTR TREAT CLEAN WATER SYSTEM (most recent 1 records, COMPLETE list):**\n- 2023-01-21: resolved in 3 days\n\n**Recent Defect History for ASH WTR TREAT CLEAN WATER SYSTEM:**\n- Resolved in 3 days: \n  Equipment: ASH Water Treatment System \n  Risk Level: \n  Expected Failure: \n  Days Remaining:",
+    "extracted": {
+      "equipment": "ASH Water Treatment System",
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "notification_history",
+    "question": "What past notifications exist for AWT CLEAN WATER PUMP NO.1?",
+    "intent": "history",
+    "context_given": "Notification History for AWT CLEAN WATER PUMP NO.1 (most recent 5 records, COMPLETE list):\n- 2023-10-28: resolved in 457 days\n- 2023-09-28: resolved in 487 days\n- 2023-09-15: resolved in 500 days\n- 2023-04-11: resolved in 14 days\n- 2023-03-21: resolved in 83 days",
+    "response": "NO_DATA: Due to the absence of past notifications for AWT CLEAN WATER PUMP NO.1, I don't have specific data available.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "notification_history",
+    "question": "Give me the maintenance history of COOLING TOWER 03 CELL / FAN 03.",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "I don't have specific equipment data for this question. \n\nNO_DATA: Here's some general maintenance best-practice advice: Regularly inspect and maintain the cooling tower's cooling system, including the fan and condenser coil, to ensure optimal performance and prevent issues.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "notification_history",
+    "question": "How many defects has COOLING TOWER 03 CELL / FAN 06 had in the past?",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: \nNo specific equipment could be identified in this question. \nDo you have any other questions or would you like me to look into the COOLING TOWER 03 CELL / FAN 06 for you?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "notification_history",
+    "question": "What was the last recorded defect for COOLING TOWER 03 CELL / FAN 09?",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question. \nRecommended action: Please provide the COOLING TOWER 03 CELL / FAN 09's maintenance history to find the last recorded defect. \nFollow-up question: Is there any specific record that might help identify the issue?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "notification_history",
+    "question": "List previous notifications for COOLING TOWER 01 CELL / FAN 01.",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nPrevious notifications for COOLING TOWER 01 CELL / FAN 01:\n \n1. Notification ID: NOT-001\n2. Notification Date: 2022-01-01\n3. Notification Type: Maintenance Notification\n4. Description: Scheduled maintenance for FAN 01.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "notification_history",
+    "question": "How often has CLARIFIED WATER SYSTEM PIPING had defects logged?",
+    "intent": "history",
+    "context_given": "Notification History for CLARIFIED WATER SYSTEM PIPING (most recent 1 records, COMPLETE list):\n- 2019-08-02: resolved in 1 days",
+    "response": "NO_DATA:\n\nAs per our agreement, I don't have specific data available for this question. However, general maintenance best-practice advice is to regularly inspect and maintain your equipment to prevent defects and ensure optimal performance.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "notification_history",
+    "question": "Show the notification history for COOLING TOWER 03 CELL / FAN 11.",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nNotification History:\n- NO_DATA: No specific equipment could be identified in this question.\n- NO_DATA: No specific equipment could be identified in this question.\n- NO_DATA: No specific equipment could be identified in this question.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "notification_history",
+    "question": "What is the defect trend for COOLING TOWER 03 CELL / FAN 13?",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nRecommended action: Review the maintenance records for COOLING TOWER 03 Cell / Fan 13 to identify the defect trend.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "notification_history",
+    "question": "Has COOLING TOWER 01 CELL / FAN 02 had recurring issues?",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "No_DATA: No specific equipment could be identified in this question.\n\nFollow-up question: What are the specific operational issues you are experiencing with COOLING TOWER 01 CELL / FAN 02?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "What is the most vulnerable equipment in Unit 1?",
+    "intent": "comparison",
+    "context_given": "NO_DATA: No equipment matched the requested filter.",
+    "response": "**NO_DATA: No equipment matched the requested filter.**\n\nBased on the provided information, I cannot provide a specific recommendation for the most vulnerable equipment in Unit 1. I don't have access to the current maintenance records, equipment data, or any additional information that would allow me to identify the most vulnerable equipment.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Which cooling tower fan has the highest failure risk right now?",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "NO_DATA: The top 5 equipment risk table is incomplete.\n\nTo determine the highest failure risk, I recommend reviewing the failure history of each equipment listed, focusing on the Butterfly Valve (BUTTERFLY VALVE) and the Butyl Valve/Actuator (BUTRFLY V/V).",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Compare the risk levels of COOLING TOWER 03 CELL / FAN 01 and FAN 02.",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "Since there are only 5 entries in the Equipment Risk Table, I will summarize the information for the top 5 entries:\n\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) - HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) - HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) - HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 - HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) - HIGH | 11 September 2026\n\nRecommended action: Review and replace the BUTTERFLY VALVE(ACTUATOR) in CT PUMP NO.01 and ST-1 CW PP NO.04 to ensure correct operation.\n\nFollow-up question: Are there any other equipment with high risk levels in the top 5 entries?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Which equipment needs the most urgent attention this month?",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "Based on the provided Equipment Risk Table, the top 5 equipment that need the most urgent attention this month are:\n\n1. ST-1 CW PP NO.01: BUTTERFLY VALVE(ACTUATOR)\n2. ST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR)\n3. ST-1 CT LUB WATER SYSTEM PUMP -07\n4. ST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR)\n5. ST-1 CT LUB WATER SYSTEM PUMP -06\n\nThese equipment have HIGH risk levels and are expected to fail on or before 11 September 2026, requiring urgent attention.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Is AWT CLEAN WATER PUMP NO.1 riskier than CLARIFIED WATER SYSTEM PIPING?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nBased on general maintenance best-practice advice, an AWT CLEAN WATER PUMP is generally more critical than a CLARIFIED WATER SYSTEM PIPING. However, it is essential to identify the specific equipment in question to provide a more accurate assessment of the risk.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Rank the top 5 highest-risk equipment items currently.",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "Based on the provided equipment risk table, the top 5 highest-risk equipment items are:\n\n1. CT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR)\n2. ST-1 CW PP NO.01: BUTTERFLY V/V (MANUAL)\n3. ST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR)\n4. ST-1 CT LUB WATER SYSTEM PUMP -07\n5. ST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR)\n\nRecommended action: Review and validate the operation of each butterfly valve (both manual and automatic) to ensure proper function, and verify the accuracy of the expected failure date.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Which cooling tower cell has the most frequent defects?",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "Based on the provided data, the cooling tower cell with the most frequent defects is ST-3 CW PP NO.07: BUTRFLY V/V (ACTUATOR) with 2 defects (high-risk).\n\nRecommended action: Request the engineer to review the maintenance records of ST-3 CW PP NO.07 to identify the cause of these defects and implement corrective actions.\n\nFollow-up question: What is the maintenance history of ST-3 CW PP NO.07?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Compare COOLING TOWER 01 CELL / FAN 01 with COOLING TOWER 03 CELL / FAN 01.",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "**Comparison of COOLING TOWER 01 CELL / FAN 01 and COOLING TOWER 03 CELL / FAN 01**\n\n* Both units have the same BUTTERFLY VALVE (ACTUATOR) and BUTTERFLY V/V (MANUAL) systems.\n* However, COOLING TOWER 03 CELL / FAN 01 has an additional ST-1 CT LUB WATER SYSTEM PUMP -07, which is not present in COOLING TOWER 01 CELL / FAN 01.\n\nRecommended action: Review the lubrication system in COOLING TOWER 03 CELL / FAN 01 to ensure it is properly maintained to prevent wear and tear on the pumps.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "What equipment in the cooling tower system is currently HIGH risk?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nRecommendation: Review the Cooling Tower System Design Documents and Maintenance Manual to identify any potential HIGH risk areas. Specifically, inspect the Cooling Tower's structural integrity, corrosion areas, and potential for erosion or damage from weather conditions.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "equipment_comparison",
+    "question": "Which piece of equipment has improved the most in risk level recently?",
+    "intent": "comparison",
+    "context_given": "Equipment Risk Table (top 5, this is the COMPLETE and ONLY data available -- do not add, remove, or invent equipment):\nCT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) | HIGH | 10 September 2026\nST-1 CW PP NO.01: BUTRFLY V/V (MANUAL) | HIGH | 10 September 2026\nST-3 CW PP NO.7B: BUTRFLY V/V(ACTUATOR) | HIGH | 10 September 2026\nST-1 CT LUB WATER SYSTEM PUMP -07 | HIGH | 11 September 2026\nST-1 CW PP NO.04: BUTRFLY V/V(ACTUATOR) | HIGH | 11 September 2026",
+    "response": "Based on the provided data, the CT PUMP NO.01: BUTTERFLY VALVE(ACTUATOR) has improved the most in risk level recently, from HIGH to HIGH.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "grounded"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What maintenance should I schedule for HIGH risk equipment this month?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nRecommended action: Review the Equipment Risk Table to identify high-risk equipment for the month. Provide further guidance on scheduling maintenance for these equipment.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What preventive steps reduce failure risk for cooling tower fans?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nNo preventive step can be recommended for cooling tower fans without knowing the specific equipment or model. However, here is some general maintenance best-practice advice:\n\n* Regular cleaning of fan blades and motor bearings can help maintain efficiency and reduce maintenance downtime.\n* Lubrication of moving parts can help extend fan life.\n* Regular monitoring of fan performance and vibration can help identify potential issues before they become major problems.\n\nTo find specific preventive steps for cooling tower fans, I recommend checking the manufacturer's documentation or contacting their customer support.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "How should I prioritize maintenance across multiple HIGH risk items?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "I don't have specific data available for this question.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What is recommended for equipment with recurring MEDIUM risk status?",
+    "intent": "history",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nRecommended action: Review the equipment risk table to identify any recurring MEDIUM risk equipment that may need attention.\n\nFollow-up question: What is the expected failure date for the MEDIUM risk equipment?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What general maintenance advice applies to ash water treatment systems?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "Since no specific equipment could be identified, I'll provide general maintenance best-practice advice.\n\nFor ash water treatment systems, regular maintenance is crucial to ensure the continued effectiveness of the treatment process. Here are some key points:\n\n* Regularly inspect and clean the ash handling system to prevent scaling and clogging.\n* Check the pH and conductivity levels to ensure they are within the optimal range for the treatment process.\n* Perform regular cleaning of the blowers, valves, and other equipment to prevent corrosion and wear.\n* Inspect the ash handling system's valves and gauges for any signs of wear or damage.\n* Consider performing a regular cleaning of the ash hopper and ash chamber to prevent ash accumulation.\n\nThis general advice applies to ash water treatment systems, but I don't have specific data on equipment or maintenance records for this particular system.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "How can I reduce unplanned downtime for pump systems?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: You don't have specific data available for pump systems.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What inspection frequency is recommended for cooling tower cells?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nRecommended action: Is there a specific cooling tower cell that you would like to know the inspection frequency for?",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What should I check first when a fan is flagged HIGH risk?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "Since NO_DATA was provided, I'll provide a general maintenance best-practice advice.\n\nWhen a fan is flagged HIGH risk, it's essential to check the following:\n\n1. Fan maintenance history: Review the fan's maintenance records to see if it has been serviced or repaired recently.\n2. Fan blade inspection: Inspect the fan blades for any signs of damage, wear, or debris accumulation.\n3. Bearing inspection: Check the fan's bearings for any signs of wear, heat, or vibration.\n\nPlease provide more context or details about the fan, such as its type, model, or previous maintenance history, if possible.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "How do I plan maintenance resources for the coming week?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "NO_DATA: No specific equipment could be identified in this question.\n\nTo plan maintenance resources for the coming week, I recommend reviewing the following records:\n\n* Equipment Risk Table (for any new or updated equipment)\n* Maintenance Schedule (for upcoming scheduled maintenance tasks)\n\nThese records should provide a good starting point for planning maintenance resources.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "invented_despite_no_data"
+  },
+  {
+    "category": "maintenance_guidance",
+    "question": "What documentation should I keep after servicing HIGH risk equipment?",
+    "intent": "maybe_single_equipment",
+    "context_given": "NO_DATA: No specific equipment could be identified in this question.",
+    "response": "I don't have equipment-specific data for this question. \n\nRecommendation: Keep a record of the servicing, including:\n\n* Date and time of servicing\n* Description of the service performed\n* Any corrective actions taken\n* Any test results or assessments conducted\n\nGeneral maintenance best-practice advice: Keep a log of maintenance activities, including the date, time, and details of each activity, to help identify trends and areas for improvement.",
+    "extracted": {
+      "equipment": null,
+      "risk": null,
+      "days": null
+    },
+    "verdict": "correctly_declined"
+  }
+]

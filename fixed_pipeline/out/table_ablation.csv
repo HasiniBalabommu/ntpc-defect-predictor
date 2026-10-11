@@ -1,0 +1,10 @@
+dropped_feature,test_acc_without,delta_vs_full
+equipment,54.23,0.0
+Functional Loc.,53.65,-0.58
+Priority,55.77,1.53
+Notifictn type,56.28,2.04
+month,54.74,0.51
+day_of_week,54.45,0.22
+hour,54.38,0.15
+shift,54.89,0.66
+year,55.04,0.8

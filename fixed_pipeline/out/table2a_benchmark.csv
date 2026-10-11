@@ -1,0 +1,6 @@
+,train_acc,test_acc,best_params
+Decision Tree,52.39225712198685,57.44525547445255,"{'min_samples_leaf': 1, 'max_depth': 6}"
+Logistic Regression,46.42074506939372,57.22627737226277,{'C': 1}
+Random Forest,59.91599707815924,57.08029197080292,"{'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 8}"
+SVM,48.48429510591672,56.64233576642336,"{'kernel': 'rbf', 'C': 0.1}"
+Neural Network (MLP),53.63403944485026,50.583941605839414,"{'hidden_layer_sizes': (50,), 'alpha': 0.0001}"
